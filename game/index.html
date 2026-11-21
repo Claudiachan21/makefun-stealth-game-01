@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Quiet Gallery — a stealth game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0e14; height: 100%; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center;
+         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #cfd6e4; }
+  #wrap { position: relative; line-height: 0; }
+  canvas { background: #141824; max-width: 96vw; max-height: 88vh; }
+  #hint { margin-top: 10px; font-size: 14px; line-height: 1.5; text-align: center; color: #8b94a7; }
+  #hint b { color: #e8ecf3; }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="game" width="1280" height="720"></canvas></div>
+<div id="hint"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak (silent, slow) &nbsp;·&nbsp; collect <b>3 relics</b>, reach the <b>EXIT</b> unseen &nbsp;·&nbsp; <b>Enter</b> start &nbsp;·&nbsp; <b>R</b> retry</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
